@@ -112,6 +112,7 @@ dd {
 /* ====== Trailer ====== */
 iframe {
   width: 100%;
+    height: auto;
   max-width: 100%;
   border: none;
   aspect-ratio: 16/9; /* make it responsiv */
@@ -173,7 +174,28 @@ footer {
   justify-content: center;
   text-align: center;
 }
+
 @media (max-width: 700px) {
+
+  /* ===== HEADER ===== */
+  header {
+    padding: 10px 0 30px;
+  }
+
+  header img {
+    width: 80%;          
+    max-width: 300px;    
+    height: auto;
+  }
+
+  /* ===== MAIN CARD ===== */
+  main {
+   
+    padding: 25px 15px;
+    border-radius: 12px; 
+  }
+
+  /* ===== PLOT ===== */
   .plot {
     flex-direction: column;
     text-align: center;
@@ -184,6 +206,16 @@ footer {
   }
 
   .plot img {
-    width: 60%;
+    width: 65%;
   }
+
+  /* ===== TRAILER ===== */
+  iframe {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;    
+    margin: 20px auto 10px;
+    aspect-ratio: 16 / 9;   
+  }
+
 }
